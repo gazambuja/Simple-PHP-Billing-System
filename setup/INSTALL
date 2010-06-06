@@ -1,0 +1,9 @@
+* Create billing database
+* Import all structure:
+mysql -uUSERNAME -p < mysql.sql
+
+* Create users (ugroup=1 to Admin and ugroup=2 to standar seller):
+echo "INSERT INTO seller (username, password, ugroup, name, notes)
+ VALUES ('myuser', MD5('mypass'), '1', 'Name', 'notes or email');" | mysql -uroot -p billing
+
+
