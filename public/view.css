@@ -1,0 +1,121 @@
+html, body {height: 95%;}
+
+#wrap {min-height: 95%;}
+
+#main {overflow:auto;
+	padding-bottom: 50px;}  /* must be same height as the footer */
+	
+.clear {
+	clear:both;
+}
+.left {
+	float:left;
+}
+.right {
+	float:right;
+}
+
+.graph {
+        float: right;
+	width: 70%;
+	height: 400px;
+}
+
+.negative {
+	color: #b61700;
+}
+.positive {
+	font-weight:bold;
+}
+
+
+#debug {
+	position: relative;
+	margin-top: -50px; /* negative value of footer height */
+	height: 45px;
+	clear:both;
+	font-family: Helvetica, Arial, sans-serif;
+	color:#acacac;
+	padding: 9px;
+	font-size: 9px;
+}
+
+.list {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-size: 12px;
+	margin: 45px;
+	text-align: left;
+	border-collapse: collapse;
+}
+.list thead th.left1 {
+	background: #b9c9fe url('img/left.png') left -1px no-repeat;
+}
+.list thead th.right1 {
+	background: #b9c9fe url('img/right.png') right -1px no-repeat;
+}
+.list th {
+	padding: 8px;
+	font-weight: normal;
+	font-size: 13px;
+	color: #039;
+	background: #b9c9fe;
+}
+.list td {
+	padding: 8px;
+	background: #e8edff;
+	border-top: 1px solid #fff;
+	color: #669;
+}
+.list tfoot td.left2 {
+	background: #e8edff url('img/botleft.png') left bottom no-repeat;
+}
+.list tfoot td.right2 {
+	background: #e8edff url('img/botright.png') right bottom no-repeat;
+}
+.list tbody tr:hover td {
+	background: #d0dafd;
+}
+
+#toolbar{ 
+	position: absolute; 
+	top: 7px;
+	right: 10px;
+	float: right;
+	font-family: Helvetica, Arial, sans-serif;
+	color: #acacac;
+	text-align: right;
+	font-size: 11px;
+}
+
+.menu {
+	verflow: auto;
+	overflow-x: hidden;
+
+}
+
+ul {
+	list-style-type: none;
+	background-image: url(img/navi_bg.png);
+	height: 80px;
+	width: 100%;
+	margin: auto;
+}
+li {
+	float: left;
+}
+ul a {
+	background-image: url(img/navi_bg_divider.png);
+	background-repeat: no-repeat;
+	background-position: right;
+	padding-right: 32px;
+	padding-left: 32px;
+	display: block;
+	line-height: 80px;
+	text-decoration: none;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 21px;
+	color: #371C1C;
+}
+ul a:hover {
+	color: #000;
+}
