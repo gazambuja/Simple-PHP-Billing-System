@@ -1,0 +1,9 @@
+Simple PHP Billing System
+Create a simple billing system to take control of next due dates, payments, etc.
+
+Todo:
+- translate all strings on view/ folder.
+- form to add users/sellers
+- can edit services and companys
+- add ajax to load=billing
+
