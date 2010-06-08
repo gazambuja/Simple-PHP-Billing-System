@@ -1,6 +1,6 @@
 * Create billing database
 * Import all structure:
-mysql -uUSERNAME -p < mysql.sql
+mysql -uUSERNAME -p DATABASENAME < mysql.sql
 
 * Create users (ugroup=1 to Admin and ugroup=2 to standar seller):
 echo "INSERT INTO seller (username, password, ugroup, name, notes)
