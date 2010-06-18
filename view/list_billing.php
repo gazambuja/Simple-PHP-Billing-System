@@ -43,7 +43,7 @@
 				<td><?=$d['values'][$key]['type']?></td>
 				<td><div <?if($d['values'][$key]['value']<0) echo 'class="negative"'; else echo 'class="positive"';?>><?=$a['money']?> <?=$d['values'][$key]['value']?></div></td>
 				<td><?=$d['values'][$key]['venc']?></td>
-				<td><?=$d['values'][$key]['pago']?></td>
+				<td><div <?if(strtotime($d['values'][$key]['venc']." 21:00:00") < strtotime(date("d-m-Y H:i:00",time()))) echo 'class="negative"';?>><?=$d['values'][$key]['pago']?></div></td>
 				<td><?=$d['values'][$key]['seller']?></td>
 			</tr>
 		 <?}}?>
