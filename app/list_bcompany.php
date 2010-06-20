@@ -1,7 +1,9 @@
 <?
 $a['title']="Lista de NFs já pagas";
+escape();
+$id_company=$_GET['id'];
 
-$result = mysql_query("SELECT * FROM billing WHERE pago!='0000-00-00' ORDER BY venc ASC");
+$result = mysql_query("SELECT * FROM billing WHERE id_company=$id_company ORDER BY venc DESC");
 while($row = mysql_fetch_array($result)){ $x++;
 
 	$freq=mselect($row['id_services'], 'freq', 'services');
@@ -17,7 +19,7 @@ while($row = mysql_fetch_array($result)){ $x++;
 	
 	$d['values2'][$x]['company']=$company;
 	$d['values2'][$x]['service']=mselect($row['id_services'], 'notes', 'services');
-	//$d['values2'][$x]['value']=mselect($row['id_services'], 'value', 'services');
+//	$d['values2'][$x]['value']=mselect($row['id_services'], 'value', 'services');
 	$d['values2'][$x]['value']=$row['value'];
 	$d['values2'][$x]['type']=$freq;
 	$d['values2'][$x]['seller']=mselect($row['id_seller'], 'name', 'seller');

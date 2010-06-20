@@ -37,7 +37,8 @@
 				 <a href="<?=$_SERVER["PHP_SELF"]?>?duplicate=<?=$d['values'][$key]['id']?>" onClick="return confirmSubmit()">
 				 <img src="public/img/copy.png" title="Duplicar"></a></td>
 				<td><?=$d['values'][$key]['nf']?></td>
-				<td><?=$d['values'][$key]['company']?></td>
+				<td><a href="<?=$_SERVER["PHP_SELF"]?>?load=list_bcompany&id=<?=$d['values'][$key]['id_company']?>" >
+					<?=$d['values'][$key]['company']?></a></td>
 				<td><?=$d['values'][$key]['service']?></td>
                                 <td><?=$d['values'][$key]['quantity']?></td>
 				<td><?=$d['values'][$key]['type']?></td>
@@ -74,7 +75,8 @@
 			<tr>
 				<td><a href="<?=$_SERVER["PHP_SELF"]?>?load=billing&id=<?=$d['values2'][$key]['id']?>"><img src="public/img/edit.png" title="Editar"></a></td>
 				<td><?=$d['values2'][$key]['nf']?></td>
-				<td><?=$d['values2'][$key]['company']?></td>
+				<td><a href="<?=$_SERVER["PHP_SELF"]?>?load=list_bcompany&id=<?=$d['values2'][$key]['id_company']?>" >
+					<?=$d['values2'][$key]['company']?></a></td>
 				<td><?=$d['values2'][$key]['service']?></td>
                                 <td><?=$d['values2'][$key]['quantity']?></td>
 				<td><?=$d['values2'][$key]['type']?></td>

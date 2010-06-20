@@ -25,6 +25,7 @@ while($row = mysql_fetch_array($result)){ $x++;
 	if($row['pago']=='0000-00-00') $row['pago']="Não foi pago";
 	if($row['nf']=='-1') $row['nf']="n/a";
 	
+	$d['values'][$x]['id_company']=$row['id_company'];
 	$d['values'][$x]['company']=$company;
 	$d['values'][$x]['service']=mselect($row['id_services'], 'notes', 'services');
 	$d['values'][$x]['quantity']=$row['quantity'];
@@ -52,7 +53,8 @@ while($row = mysql_fetch_array($result)){ $x++;
 	if(strlen($company)>17) $company = substr($company, 0, 15) . "...";
 	
 	if($row['pago']=='0000-00-00') $row['pago']="Não foi pago";
-	
+
+	$d['values2'][$x]['id_company']=$row['id_company'];	
 	$d['values2'][$x]['company']=$company;
 	$d['values2'][$x]['service']=mselect($row['id_services'], 'notes', 'services');
         $d['values2'][$x]['quantity']=$row['quantity'];
