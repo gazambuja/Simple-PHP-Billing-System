@@ -24,14 +24,15 @@ foreach($months as $key => $month){
 	
 	$d['values'][$key]['month']=$month;
 	$d['values'][$key]['in']=$in;
-        $d['values'][$key]['out']=$out;
-        $d['values'][$key]['total']=$in+$out;
+	$d['values'][$key]['out']=$out;
+	$d['values'][$key]['total']=$in+$out;
 
-	if(empty($d['graph']['in'])) $d['graph']['in']= "$in";
-	$d['graph']['in']=$d['graph']['in'].",$in";
 
-        if(empty($d['graph']['out'])) $d['graph']['out']= abs($out);
-        $d['graph']['out']=$d['graph']['out'].",".abs($out);
+	if($month=='Jan') $d['graph']['in']= "$in";
+	else $d['graph']['in']=$d['graph']['in'].",$in";
+
+	if($month=='Jan') $d['graph']['out']= abs($out);
+	else $d['graph']['out']=$d['graph']['out'].",".abs($out);
 
 }
 
