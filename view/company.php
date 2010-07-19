@@ -9,8 +9,8 @@
 			<th>Endereço</th>
 			<th>Tel</th>
 			<th>email</th>
-			<th>Descripção</th>
-			<th class="right1">CRM</th>
+			<th>CNPJ</th>
+			<th class="right1">CRM (link)</th>
 		</tr></thead>
 		<tfoot><tr> 
         	<td colspan="5" class="left2"><input type="submit" value="Adicionar"></td> 

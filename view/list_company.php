@@ -4,7 +4,7 @@
 			<th scope="col">Endereço</th>
 			<th scope="col">Tel</th>
 			<th scope="col">email</th>
-			<th scope="col">Descripção</th>
+			<th scope="col">CNPJ</th>
 			<th scope="col" class="right1">CRM</th>
 		</tr></thead>
 		<tfoot><tr> 
